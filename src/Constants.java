@@ -26,7 +26,9 @@ public class Constants extends Credentials {
     final String followersButtonPath = "/html/body/div[1]/section/main/div/header/section/ul/li[2]/a";
     final String followersListSelector = "div[role='dialog'] ul";
     final String focusButton1Path = "/html/body/div[5]/div/div/div[2]/ul/div/li[1]/div/div[2]/div[2]/div";
-    final String focusButton2Path = "/html/body/div[5]/div/div/div[2]/ul/div/li[2]/div/div[2]/div[2]/div";
+                                    ///html/body/div[5]/div/div/div[2]/ul/div/li[1]/div/div[1]/div[2]/div[2]
+    final String focusButton2Path = "/html/body/div[4]/div/div/div[2]/ul/div/li[2]/div/div[2]/div[2]/div";
+    final String focusButton3Path = "/html/body/div[5]/div/div/div[2]/ul/div/li[2]/div/div[1]/div[2]/div[2]";
 //    final String followButtonInListPath = "/html/body/div[5]/div/div/div[2]/ul/div/li[ID_HERE]/div/div[3]/button";
 
     // unfollow all step

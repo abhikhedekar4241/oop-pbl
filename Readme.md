@@ -13,6 +13,7 @@ Setting up environment
 5. Copy url of this repository.
 6. Paste that url in the url box.
 7. Click on ***clone***. (This will clone the repository in your local machine.)
+8. In ***drivers folder***, replace the ***chromedriver*** with latest chromedriver supporting your operating system. [Click here to download latest chromedriver](https://chromedriver.chromium.org/downloads).
 
 Running the program
 ---

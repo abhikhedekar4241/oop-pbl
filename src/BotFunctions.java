@@ -69,8 +69,13 @@ abstract class BotFunctions {
             try {
                 focusButton = driver.findElement(new By.ByXPath(constants.focusButton1Path));
             } catch (NoSuchElementException exception) {
-                focusButton = driver.findElement(new By.ByXPath(constants.focusButton2Path));
-                System.out.println(exception.getMessage());
+                try{
+                    focusButton = driver.findElement(new By.ByXPath(constants.focusButton2Path));
+                    System.out.println(exception.getMessage());
+                }catch (NoSuchElementException excp){
+                    focusButton = driver.findElement(new By.ByXPath(constants.focusButton3Path));
+                    System.out.println(exception.getMessage());
+                }
             }
             focusButton.click();
 
