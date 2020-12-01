@@ -56,7 +56,7 @@ abstract class BotFunctions {
             followingListButton.click();
             delay(2);
             WebElement followingListDialog = new WebDriverWait(driver, constants.milliSeconds).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(constants.followingListSelector)));
-            System.out.println(followingListDialog);
+//            System.out.println(followingListDialog);
 
             // Get elements from dialog4
             List<WebElement> followingList = followingListDialog.findElements(new By.ByCssSelector("li"));
@@ -72,9 +72,9 @@ abstract class BotFunctions {
                 try{
                     focusButton = driver.findElement(new By.ByXPath(constants.focusButton2Path));
                     System.out.println(exception.getMessage());
-                }catch (NoSuchElementException excp){
+                }catch (NoSuchElementException exception1){
                     focusButton = driver.findElement(new By.ByXPath(constants.focusButton3Path));
-                    System.out.println(exception.getMessage());
+                    System.out.println(exception1.getMessage());
                 }
             }
             focusButton.click();
@@ -196,8 +196,16 @@ abstract class BotFunctions {
 
             delay(3);
             // Find password field and enter password
-            WebElement followButton = new WebDriverWait(driver, constants.milliSeconds)
-                    .until(ExpectedConditions.presenceOfElementLocated(By.xpath(constants.followButtonPath)));
+            WebElement followButton;
+            try{
+//                followButton = driver.findElement(new By.ByXPath(constants.followButton1Path));
+                followButton = new WebDriverWait(driver, constants.milliSeconds)
+                        .until(ExpectedConditions.presenceOfElementLocated(By.xpath(constants.followButton2Path)));
+            }catch (Exception exception){
+//                followButton = driver.findElement(new By.ByXPath(constants.followButton2Path));
+                followButton = new WebDriverWait(driver, constants.milliSeconds)
+                        .until(ExpectedConditions.presenceOfElementLocated(By.xpath(constants.followButton1Path)));
+            }
             followButton.click();
             delay(3);
 

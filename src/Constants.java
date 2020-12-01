@@ -9,7 +9,7 @@ public class Constants extends Credentials {
     final String enterPassword = "\nEnter your password";
 
     // Timeout
-    final int milliSeconds = 30;
+    final int milliSeconds = 10;
 
     // URLs
     final String instagramBaseUrl = "https://www.instagram.com/";
@@ -20,7 +20,9 @@ public class Constants extends Credentials {
     final String passwordFieldPath = "/html/body/div[1]/section/main/div/div/div[1]/div/form/div/div[2]/div/label/input";
 
     // follow by username step
-    final String followButtonPath = "/html/body/div[1]/section/main/div/header/section/div[1]/div[1]/div/div/div/span/span[1]/button";
+    final String followButton1Path = "/html/body/div[1]/section/main/div/header/section/div[1]/div[1]/div/div/div/span/span[1]/button";
+    final String followButton2Path = "/html/body/div[1]/section/main/div/header/section/div[1]/div[1]/div/div/button";
+
 
     // followers list step
     final String followersButtonPath = "/html/body/div[1]/section/main/div/header/section/ul/li[2]/a";

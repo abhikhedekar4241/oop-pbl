@@ -1,4 +1,4 @@
 abstract class CredentialsCopy {
-    String userName = "USERNAME_HERE";
-    String password = "PASSWORD_HERE";
+    protected String userName = "USERNAME_HERE";
+    protected String password = "PASSWORD_HERE";
 }
